@@ -1,0 +1,23 @@
+<div id="filterContainer">
+    <div class="seletor">
+        <label for="categorias">Filtrar por categoria: </label>
+        <select (change)="filtra($event.target.value)" name="categorias" id="selectCategorias">
+            <option value="1">Todas</option>
+            <option value="2">Cactos e suculentas</option>
+            <option value="3">Folhagens</option>
+            <option value="4">Hortaliças</option>
+            <option value="5">Flores</option>
+            <option value="6">Trepadeiras</option>
+            <option value="7">Forrações</option>
+        </select>
+    </div>
+
+    <div class="seletor">
+        <label (change)="ordena($event.target.value)" for="ordem">Ordenar por: </label>
+        <select name="ordem" id="selectOrdem">
+            <option value="1">Mais vendidas</option>
+            <option value="2">Menor preço</option>
+            <option value="3">Maior preço</option>
+        </select>
+    </div>
+</div>

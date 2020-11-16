@@ -1,0 +1,29 @@
+<div id="paralax-baner">
+
+  <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+
+  <div class="mySlides fade">
+    <img src="../../assets/images/1.jpg" style="max-width:100%;
+    max-height:80vh;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../assets/images/2.jpg" style="max-width:100%;
+    max-height:80vh;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../assets/images/3.jpg" style="max-width:100%;
+    max-height:80vh;">
+  </div>
+
+  <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+  <div style="text-align:center">
+    <span class="dot" (click)="currentSlide(1)"></span>
+    <span class="dot" (click)="currentSlide(2)"></span>
+    <span class="dot" (click)="currentSlide(3)"></span>
+  </div>
+
+</div>
+

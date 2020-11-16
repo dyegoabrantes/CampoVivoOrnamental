@@ -1,0 +1,11 @@
+<div id="content">
+    <img class="product-img" src="{{produto.imageUrl}}" />
+    <div class="header">{{ produto.nome }}</div>
+    <div  style="padding: 10px 10px;"  class="description">
+      <span *ngFor="let nome of produto.categoria; let i=index">
+        <a class="categoriaLink" (click)='clickado(nome)'>{{ nome }}</a>
+        <span>{{i < (produto.categoria.length-1) ? ' - ' : ''}}</span>
+      </span>
+    </div>
+    <div id="preco">R${{ produto.preco }}</div>
+</div>

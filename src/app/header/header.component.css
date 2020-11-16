@@ -1,0 +1,158 @@
+#Corpo{
+    background-color: rgb(230, 230, 230);
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.233);
+}
+#HomeMarcaLink{
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    margin-left: 2vw;
+    display: inline-block;
+}
+
+#marca{
+    max-width: 100%;
+    max-height: 49px;
+    margin: 12px 0 8px 0;
+    transition: max-height 450ms;
+    cursor: pointer;
+}
+    #marca:hover{
+        max-height: 45px;
+    }
+
+#HeaderMenu{
+    display: flex;
+    position: static;
+    height: 74px;
+    float: right;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: #cccccc;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 16px;
+    height: 74px;
+    font-size: 16pt;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 450ms, color 450ms;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: none;
+    font-size: 16pt;
+    border:none;
+    height: 74px;
+    /* display: block; */
+    cursor: pointer;
+    background: #4E6C54;
+    color: #cccccc;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #cccccc;
+    /* min-width: 160px; */
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.322);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-size: 12pt;
+    color: #4E6C54;
+    transition: background-color 750ms, color 750ms;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #3e8e41;
+      color: cornsilk;
+      
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      color: cornsilk;
+    background-color: #3e8e41;
+  }
+
+  #contato{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    border-left: palegoldenrod;
+    border: none;
+    outline: none;
+    /* border-style: none none none dotted; */
+    display: block;
+    float: right;
+    position: relative;
+    height: 74px;
+    padding: 10px;
+    text-align: center;
+    background: #4E6C54;
+    color: #cccccc;
+    margin: auto;
+    transition: background-color 450ms, color 450ms;
+}
+#contato:hover  {
+    background-color: #3e8e41;
+    color: cornsilk;
+  }
+  
+#carrinho{
+  display: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16pt;
+  border-left: palegoldenrod;
+  border: none;
+  outline: none;
+  border-style: none none none dotted;
+  float: right;
+  position: relative;
+  height: 74px;
+  padding: 10px 2vw 10px 10px;
+  text-align: center;
+  background: #4E6C54;
+  color: #cccccc;
+  margin: auto;
+  transition: background-color 450ms, color 450ms;
+}
+#carrinho:hover  {
+    background-color: #3e8e41;
+    color: cornsilk;
+}
+
+@media only screen and (max-width: 600px) {
+  #Corpo{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+  }
+  #HeaderMenu{
+    float: none;
+    text-align: center;
+    display: inline-flex;
+}
+}

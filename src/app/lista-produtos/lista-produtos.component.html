@@ -1,0 +1,17 @@
+<div class="ui items">
+  <app-card-produto
+    *ngFor="let p of listaProdutos"
+    [produto]="p"
+    (click)='clicked(p)'
+    [class.selected]="isSelected(p)">
+  </app-card-produto>
+</div>
+
+<div id="modalProduto">
+  <div id="displayProduto">
+
+  </div>
+  <div id="descricaoProduto">
+    
+  </div>
+</div>

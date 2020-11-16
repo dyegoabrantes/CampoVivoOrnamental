@@ -1,0 +1,28 @@
+#cadastroProdutoForm{
+    float: left;
+    padding: 30px;
+    background-color: whitesmoke;
+    margin: 30px;
+    max-width: 250px;
+}
+
+form{
+    text-align: left;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+#tipoProduto, #tipoProdutoLabel{
+    display: none;
+}
+
+#produtosCadastrados{
+    max-height: 100vh;
+    overflow: scroll;
+}

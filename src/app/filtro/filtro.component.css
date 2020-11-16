@@ -1,0 +1,21 @@
+#filterContainer{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.seletor{
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.233);
+    border-radius: 8px;
+    display: inline-block;
+    padding: 20px;
+    margin: 0 10px 0 10px;
+    color: rgb(77, 77, 77);
+} .seletor select{
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 15px;
+    font-family:  'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}

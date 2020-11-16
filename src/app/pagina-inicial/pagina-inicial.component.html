@@ -1,0 +1,11 @@
+<app-promocao-baner></app-promocao-baner>
+<div id="divisorPaginaInicial">
+    <img class="divisores" src="../../assets/images/dLeft.svg" alt="divisor botanico">
+    <span style="margin: 0 20px 0 20px;">Nossos principais produtos</span>
+    <img class="divisores" src="../../assets/images/dRight.svg" alt="divisor botanico">
+</div>
+
+<app-lista-produtos
+    [listaProdutos]="produtos"
+    (onProductSelected)="productWasSelected($event)">
+</app-lista-produtos>

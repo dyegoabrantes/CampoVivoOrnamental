@@ -1,0 +1,51 @@
+<div id="cadastroProdutoForm">
+    <h3 >Cadastrar produto novo</h3>
+    <form>
+        <label for="nomeProduto">Nome do produto</label>
+        <input type="text" name="nomeProduto"> <br>
+        
+        <label for="preco">Preço do produto</label>
+        <input type="number" name="preco"><br>
+
+        <label for="quantidade">Quantidade de peças</label>
+        <input type="number" name="quantidade"><br>
+        
+        <label for="tipoProduto">Tipo do produto</label>
+        <select (change)="mudaTipo($event.target.value)" name="tipoProduto" id="">
+            <option value="" selected="true" disabled>Selecione o tipo do produto</option>
+            <option value="planta">planta</option>
+            <option value="cachaca">cachaça</option>
+            <option value="pacoca">paçoca</option>
+            <option value="geleia">geleia</option>
+            <option value="mel">mel</option>
+        </select><br>
+        
+        <label for="categoriaPlanta" id="tipoProdutoLabel"> Selecione as categorias</label><br>
+        <div id="tipoProduto">
+            <input type="checkbox" id="1" name="1" value="suculenta" >
+            <label for="1">suculenta</label><br>
+            <input type="checkbox" id="2" name="2" value="folhagem">
+            <label for="2">folhagem</label><br>
+            <input type="checkbox" id="2" name="3" value="hortaliça">
+            <label for="3">hortaliça</label><br>
+            <input type="checkbox" id="2" name="4" value="flor">
+            <label for="4">flor</label><br>
+            <input type="checkbox" id="2" name="5" value="trepadeira">
+            <label for="5">trepadeira</label><br>
+            <input type="checkbox" id="2" name="6" value="forração">
+            <label for="6">forração</label><br>
+        </div>
+
+        <label for="descricao">Descrição</label><br>
+        <textarea id="subject" name="descricao" style="max-height:250px; max-width: 250px;"></textarea>
+        
+    </form>
+    <button style="margin-top: 10px; background-color: darkgreen; padding: 5px; color: whitesmoke;" > Cadastrar</button>
+</div>
+
+<div id="produtosCadastrados">
+    <app-lista-produtos
+        [listaProdutos]="produtos"
+        (onProductSelected)="productWasSelected($event)">
+    </app-lista-produtos>
+</div>
